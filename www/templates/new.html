@@ -1,5 +1,12 @@
 <ion-view view-title="Compte">
   <ion-content>
-    <h1>Vue passer</h1>
+    <div class="list card">
+      <div class="item item-image">
+        <img ng-src="{{pictureUrl}}" />
+      </div>
+    </div>
+    <div class="padding">
+      <button ng-click="takePicture()"class="button button-block button-calm"> Take Picture</button>
+    </div>
   </ion-content>
 </ion-view>

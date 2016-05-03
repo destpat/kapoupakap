@@ -3,7 +3,8 @@ var mongoose = require('mongoose');
 
 var userSchema = new mongoose.Schema({
   user: String,
-  password: String
+  password: String,
+  pictureUrl: String
 });
 
 var User = {
@@ -13,7 +14,8 @@ var User = {
     create: function(req, res) {
 		User.model.create({
       user: req.body.user,
-      password: req.body.password
+      password: req.body.password,
+      pictureUrl: req.body.pictureUrl
 		}, function(){
 			res.sendStatus(200);
 		})
@@ -33,7 +35,7 @@ var User = {
 			res.sendStatus(200);
 		})
 	},
-  
+
 	delete: function(req, res){
 		User.model.findByIdAndRemove(req.params.id, function(){
 			res.sendStatus(200);

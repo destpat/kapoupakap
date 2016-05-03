@@ -1,5 +1,6 @@
 angular.module('starter.controllers', [])
 .controller('compteCtrl', compteCtrl)
+.controller('cameraCtrl', cameraCtrl)
 .controller('AppCtrl', function($scope, $ionicModal, $timeout,$http) {
 
   // With the new view caching in Ionic, Controllers are only called
