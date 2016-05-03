@@ -41,6 +41,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         }
       }
     })
+  .state('app.defi', {
+      url: '/defi',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/defi.html',
+          controller: 'defiCtrl'
+        }
+      }
+    })
   .state('app.new', {
       url: '/new',
       views: {

@@ -15,9 +15,9 @@ var User = {
 		User.model.create({
       user: req.body.user,
       password: req.body.password,
-      pictureUrl: req.body.pictureUrl
-		}, function(){
-			res.sendStatus(200);
+      pictureUrl: ''
+		}, function(err, user){
+			res.send(user);
 		})
 	},
 
@@ -28,10 +28,8 @@ var User = {
 	},
 
 	update: function(req, res){
-		User.model.findByIdAndUpdate(req.params.id, {
-      user: req.body.user,
-			password: req.body.password
-		}, function(){
+    console.log(req.body.user,  req.params.id);
+		User.model.findByIdAndUpdate(req.params.id, req.body, function(){
 			res.sendStatus(200);
 		})
 	},

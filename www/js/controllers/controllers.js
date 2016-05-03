@@ -1,4 +1,5 @@
 angular.module('starter.controllers', [])
+.controller('defiCtrl', defiCtrl)
 .controller('compteCtrl', compteCtrl)
 .controller('cameraCtrl', cameraCtrl)
 .controller('AppCtrl', function($scope, $ionicModal, $timeout,$http) {
