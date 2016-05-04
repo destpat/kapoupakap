@@ -137,3 +137,9 @@ body {
 	border-radius: 50%;
 	margin-top: 80px;
 }
+
+.button-balanced {  
+  width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
