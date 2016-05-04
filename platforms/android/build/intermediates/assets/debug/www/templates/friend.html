@@ -1,0 +1,12 @@
+<ion-view view-title="A qui lance tu ton défis">
+  <ion-content>
+    <div ng-repeat="user in users">
+      <div class="card">
+        <div class="item item-text-wrap">
+          <img ng-click="notify(user._id)" class="userimg rotate90" src="{{user.pictureUrl}}"/><i class="icon ion-star"></i>
+          {{user.user}}
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,79 @@
+<ion-view view-title="Accueil">
+  <ion-content>
+    
+    
+
+
+    <!--  <script id="templates/accueil.html" type="text/ng-template">  -->
+      
+        <ion-nav-buttons side="left">
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="startApp()" ng-show="!slideIndex">
+            Passer l'intro
+          </button>
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="previous()" ng-show="slideIndex > 0">
+            Previous Slide
+          </button>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right"> 
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="next()" ng-show="slideIndex != 2">
+            Suivant
+          </button>
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="startApp()" ng-show="slideIndex == 2">
+            Start using MyApp
+          </button>
+        </ion-nav-buttons>
+        <ion-slide-box on-slide-changed="slideChanged(index)">
+          <ion-slide>
+            <h3>Merci d'avoir choisi<br>l'application</h3>
+            <div id="logo">
+              <h1>KapOuPaKap</h1>
+            </div>
+            <p>
+              We've worked super hard to make you happy.
+            </p>
+            <p>
+              But if you are angry, too bad.
+            </p>
+          </ion-slide>
+          <ion-slide>
+            <h3>Une utilisation géniale</h3>
+            
+            <div id="list">
+              <h5>Fonctionne en 3 étapes:</h5>
+              <ol>
+                <li>Clic sur défi !</li>
+                <li>Choisi le défi</li>
+                <li>Et choisi un joueur</li>
+              </ol>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <h3>Es-tu prêt ?</h3>
+            <p>
+              Clic sur défi pour commencer !
+            </p>
+			<a href="#/app/defi"><button class="button button-assertive">
+				  DÉFI !</button>
+			</a>
+
+          </ion-slide>
+        </ion-slide-box>
+     <!-- </script>  -->
+    
+
+    <script id="templates/main.html" type="text/ng-template">
+      <ion-view hide-back-button="true" view-title="Awesome">
+        <ion-content class="padding">
+          <h1>Main app here</h1>
+          <button class="button" ng-click="toIntro()">Do Tutorial Again</button>
+        </ion-content>
+      </ion-view>
+    
+    </script>
+  
+  </ion-content>
+</ion-view>

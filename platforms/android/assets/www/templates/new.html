@@ -1,0 +1,14 @@
+<ion-view view-title="Ameliore ton profile">
+  <ion-content>
+    <p class="new">Ajoute une photo à ton profile et recois 3 fois plus de défis </p>
+    <div class="list card">
+      <div class="item item-image">
+        <img class="rotate90 circle" ng-src="{{pictureUrl}}" />
+      </div>
+    </div>
+    <div class="padding">
+      <button ng-click="takePicture()"class="button button-block button-calm"> Prendre une photo de profile</button>
+      <button ng-click="goProfile()"class="button button-block button-calm"> Aller à mon profile</button>
+    </div>
+  </ion-content>
+</ion-view>
