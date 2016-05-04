@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/apprenti/Desktop/hacakton/kapoupakap/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="89f66a091a5ee757303f12308ff17bd43612385e">
+        <dex dex="/home/apprenti/Desktop/hacakton/kapoupakap/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_15da27fb3d417a724df458bd62ec94e84897242b.jar" />
+    </item>
+
+</items>
