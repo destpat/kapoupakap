@@ -6,6 +6,26 @@ angular.module('starter.controllers', [])
 .controller('cameraCtrl', cameraCtrl)
 .controller('AppCtrl', function($scope, $ionicModal, $timeout,$http) {
 
+.controller('MapCtrl', function($scope, $state, $cordovaGeolocation) {
+var  options = {timeout: 10000, enableHighAccuracy: true };
+ 
+  $ cordovaGeolocation.getCurrentPosition (options) .alors ( fonction (position) {
+ 
+    var  latlng = nouveau  google.maps.LatLng (position.coords.latitude, position.coords.longitude);
+ 
+    var  mapOptions = {
+      centre: LatLng,
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+ 
+    $ scope.map = nouveaux  google.maps.Map (document.getElementById ( "map" ), mapOptions);
+ 
+  }, La fonction (erreur) {
+    console.log ("Impossible d' obtenir l' emplacement");
+  });
+});
+
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
