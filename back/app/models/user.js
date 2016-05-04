@@ -15,7 +15,7 @@ var User = {
 		User.model.create({
       user: req.body.user,
       password: req.body.password,
-      pictureUrl: ''
+      pictureUrl: req.body.pictureUrl,
 		}, function(err, user){
 			res.send(user);
 		})

@@ -1,8 +1,8 @@
 <ion-view view-title="A qui lance tu ton défis">
   <ion-content>
     <li class="list-group-item" ng-repeat="user in users">
-      {{user.password}}
+      {{user.user}}
+      <img class="userimg rotate90" src="{{user.pictureUrl}}" alt="image utilisateur" />  
   	</li>
   </ion-content>
 </ion-view>
-user

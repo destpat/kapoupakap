@@ -1,8 +1,8 @@
 function defiCtrl($scope, $state) {
 
-  $scope.defi1 = (1+Math.floor(Math.random() * 12));
-  $scope.defi2 = (1+Math.floor(Math.random() * 12));
-  $scope.defi3 = (1+Math.floor(Math.random() * 12));
+  $scope.defi1 = (1+Math.floor(Math.random() * 13));
+  $scope.defi2 = (1+Math.floor(Math.random() * 13));
+  $scope.defi3 = (1+Math.floor(Math.random() * 13));
 
   if ($scope.defi1 == 1) {
     $scope.defi1 = "De prendre une photo avec nicki minaj"
@@ -39,6 +39,15 @@ function defiCtrl($scope, $state) {
   }
   if ($scope.defi1 == 12) {
      $scope.defi1 = "De mettre ta tete dans un paquet de chips"
+  }
+  if ($scope.defi1 == 13) {
+     $scope.defi1 = "De manger un petit suisse d'un coup"
+  }
+  if ($scope.defi1 == 14) {
+     $scope.defi1 = "De manger 5 têtes brulé d'un coup"
+  }
+  if ($scope.defi1 == 15) {
+     $scope.defi1 = "De manger un petit suisse d'un coup"
   }
  // Defi 2
   if ($scope.defi2 == 1) {
@@ -77,6 +86,15 @@ function defiCtrl($scope, $state) {
   if ($scope.defi2 == 12) {
      $scope.defi2 = "De mettre ta tete dans un paquet de chips"
   }
+  if ($scope.defi2 == 13) {
+     $scope.defi2 = "De manger un petit suisse d'un coup"
+  }
+  if ($scope.defi2 == 14) {
+     $scope.defi2 = "De manger 5 têtes brulé d'un coup"
+  }
+  if ($scope.defi2 == 15) {
+     $scope.defi2 = "De manger un petit suisse d'un coup"
+  }
   // Defi 3
   if ($scope.defi3 == 1) {
      $scope.defi3 = "De prendre une photo avec nicki minaj"
@@ -113,6 +131,15 @@ function defiCtrl($scope, $state) {
   }
   if ($scope.defi3 == 12) {
      $scope.defi3 = "De mettre ta tete dans un paquet de chips"
+  }
+  if ($scope.defi3 == 13) {
+     $scope.defi3 = "De manger un petit suisse d'un coup"
+  }
+  if ($scope.defi3 == 14) {
+     $scope.defi3 = "De manger 5 têtes brulé d'un coup"
+  }
+  if ($scope.defi3 == 15) {
+     $scope.defi3 = "De manger un petit suisse d'un coup"
   }
   $scope.friend = function(){
     $state.go('app.friend');
