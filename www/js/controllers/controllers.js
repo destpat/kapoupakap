@@ -1,4 +1,6 @@
 angular.module('starter.controllers', [])
+
+.controller('friendCtrl', friendCtrl)
 .controller('defiCtrl', defiCtrl)
 .controller('compteCtrl', compteCtrl)
 .controller('cameraCtrl', cameraCtrl)

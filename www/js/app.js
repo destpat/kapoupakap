@@ -50,6 +50,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         }
       }
     })
+  .state('app.friend', {
+      url: '/friend',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/friend.html',
+          controller: 'friendCtrl'
+        }
+      }
+    })
   .state('app.new', {
       url: '/new',
       views: {
