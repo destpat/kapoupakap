@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('friendCtrl', friendCtrl)
+.controller('friendsController', friendsController)
 .controller('defiCtrl', defiCtrl)
 .controller('compteCtrl', compteCtrl)
 .controller('cameraCtrl', cameraCtrl)
@@ -27,7 +27,7 @@ angular.module('starter.controllers', [])
   $scope.closeLogin = function() {
     $scope.modal.hide();
   };
-
+  
   // Open the login modal
   $scope.login = function() {
     $scope.modal.show();

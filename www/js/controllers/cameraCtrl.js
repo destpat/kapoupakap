@@ -1,4 +1,4 @@
-function cameraCtrl($scope, $cordovaCamera, $http, $rootScope) {
+function cameraCtrl($scope, $cordovaCamera, $http, $rootScope, $state) {
 
   $scope.pictureUrl = 'http://placehold.it/300x300';
   $scope.takePicture = function() {
@@ -20,4 +20,8 @@ function cameraCtrl($scope, $cordovaCamera, $http, $rootScope) {
         console.log('camera error: ' + angular.toJson(data))
       });
   };
+
+  $scope.goProfile = function(){
+    $state.go('app.profile');
+  }
 }

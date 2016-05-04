@@ -5,7 +5,6 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
-
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -55,7 +54,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
       views: {
         'menuContent': {
           templateUrl: 'templates/friend.html',
-          controller: 'friendCtrl'
+          controller: 'friendsController'
+        }
+      }
+    })
+  .state('app.profile', {
+      url: '/profile',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/profile.html',
+          controller: 'cameraCtrl'
         }
       }
     })
