@@ -8,4 +8,7 @@ function compteCtrl($scope, $http, $state, $rootScope){
       $rootScope.user = res.data;
     });
   };
+  $scope.next = function(){
+    $state.go('app.profile')
+  }
 }

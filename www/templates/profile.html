@@ -1,7 +1,13 @@
 <ion-view view-title="Mon profil">
   <ion-content>
-      <div ng-repeat="user in users">
-      {{users.user}}
+    <h1>Elle on étais kap</h1>
+    <div ng-repeat="user in users">
+      <div class="card">
+        <div class="item item-text-wrap">
+          <img class="userimg rotate90" src="{{user.pictureUrl}}"/>
+          {{user.user}}
+        </div>
       </div>
+    </div>
   </ion-content>
 </ion-view>

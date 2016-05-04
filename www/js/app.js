@@ -63,7 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
       views: {
         'menuContent': {
           templateUrl: 'templates/profile.html',
-          controller: 'cameraCtrl'
+          controller: 'friendsController'
         }
       }
     })
