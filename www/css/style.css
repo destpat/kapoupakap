@@ -1,1 +1,11 @@
 /* Empty. Add your own CSS if you like */
+
+#map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-menu {
+	margin-right: 15px;
+}
