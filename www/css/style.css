@@ -1,4 +1,5 @@
 /* Empty. Add your own CSS if you like */
+
 @font-face {
     font-family: 'leckerlioneregular';
     src: url('../font/leckerlione-regular-webfont.eot');
@@ -89,4 +90,14 @@ h1{
 
 .useruser{
   margin-top: 10%;
+}
+
+#map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-menu {
+	margin-right: 15px;
 }

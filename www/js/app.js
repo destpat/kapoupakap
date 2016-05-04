@@ -5,6 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -31,6 +32,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
     controller: 'AppCtrl'
   })
 
+
   .state('app.compte', {
       url: '/compte',
       views: {
@@ -40,6 +42,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         }
       }
     })
+
+  .state('app.accueil', {
+    url: '/accueil',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/accueil.html'
+      }
+    }
+  })
+
+  
+  .state('app.map', {
+    url: '/map',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/map.html',
+        controller: 'mapCtrl'
+      }
+    }
+  })
+ 
   .state('app.defi', {
       url: '/defi',
       views: {
@@ -49,6 +72,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         }
       }
     })
+
   .state('app.friend', {
       url: '/friend',
       views: {
@@ -58,6 +82,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         }
       }
     })
+
   .state('app.profile', {
       url: '/profile',
       views: {
@@ -67,6 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         }
       }
     })
+
   .state('app.new', {
       url: '/new',
       views: {
@@ -75,7 +101,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
           controller: 'cameraCtrl'
         }
       }
-    });
+    }),
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/compte');
