@@ -32,7 +32,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
     controller: 'AppCtrl'
   })
 
-
   .state('app.compte', {
       url: '/compte',
       views: {

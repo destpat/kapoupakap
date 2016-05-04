@@ -77,3 +77,63 @@ h4{
 .icon-menu {
 	margin-right: 15px;
 }
+
+
+/* Accueil ****************************/
+
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+#logo {
+    background-color: #ff9401;
+    border-radius: 10px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px 18px 35px 18px;
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
+
+#logo h1 {
+	font-size: 1.8em;
+    color: #fff;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button.ng-hide{
+  display:none;
+}
+
+.button-assertive {
+	width: 150px;
+	height:150px;
+	border-radius: 50%;
+	margin-top: 80px;
+}
