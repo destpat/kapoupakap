@@ -52,7 +52,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
     }
   })
 
-  
   .state('app.map', {
     url: '/map',
     views: {
@@ -62,7 +61,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
       }
     }
   })
- 
+
   .state('app.defi', {
       url: '/defi',
       views: {
@@ -82,7 +81,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         }
       }
     })
-
   .state('app.profile', {
       url: '/profile',
       views: {
@@ -92,7 +90,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         }
       }
     })
-
+  .state('app.notify', {
+      url: '/notify',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/notify.html',
+          controller: 'friendsController'
+        }
+      }
+    })
   .state('app.new', {
       url: '/new',
       views: {
