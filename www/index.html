@@ -23,16 +23,18 @@
     </script>
 
     <!-- your app's js -->
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj_cbaJBZunVGbCLVYQLpsmZa1m2kCh9w&callback=initMap">
-    </script>     
-    <script src="js/map.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/controllers/mapCtrl.js"></script>
+
     <script src="js/controllers/compteCtrl.js"></script>
     <script src="js/controllers/cameraCtrl.js"></script>
     <script src="js/controllers/defiCtrl.js"></script>
     <script src="js/controllers/friendscontroller.js"></script>
     <script src="js/controllers/controllers.js"></script>
+        <script src="js/app.js"></script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj_cbaJBZunVGbCLVYQLpsmZa1m2kCh9w&sensor=true">
+    </script>     
   </head>
 
   <body ng-app="starter">

@@ -40,6 +40,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
           templateUrl: 'templates/compte.html',
           controller: 'compteCtrl'
         }
+      }
+    })
 
   .state('app.accueil', {
     url: '/accueil',
@@ -70,6 +72,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         }
       }
     })
+
   .state('app.friend', {
       url: '/friend',
       views: {
@@ -98,8 +101,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
           controller: 'cameraCtrl'
         }
       }
-    });
+    }),
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/compte');
-};
+});
